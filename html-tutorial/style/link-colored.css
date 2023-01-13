@@ -1,0 +1,28 @@
+/* Warna Link */
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Warna Link yang telah dikunjungi */
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Warna link ketika mouse diatasnya */
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Warna link keitka di klik */
+a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+

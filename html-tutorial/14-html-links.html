@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <!-- <link rel="stylesheet" href="style/link-colored.css"> -->
+    <link rel="stylesheet" href="style/link-button.css">
+</head>
+<body>
+
+    <!-- Link untuk Bookmarks -->
+    <p><a href="#C4">Pergi ke bawah</a></p>
+    <!-- Link ke bookmarks page lain -->
+    <p><a href="12-html-colors.html#HSLA">Pergi ke HSLA</a></p>
+
+    <a href="https://www.github.com/dimadisaputra">Pergi ke github.com</a><br>
+    
+    <!-- HTML Links - The target Attribute -->
+    <!-- target atrubut berisi: -->
+    <!-- _self : Default. Membuka halaman di windows yang sama ketika diklik -->
+    
+    <!-- _blank : Membukan halaman di tab baru pada browser -->
+    <a href="https://www.github.com/dimadisaputra" target="_blank">Buka link di tab baru</a><br>
+    
+    <!-- _parent : Membuka halaman di parent frame  -->
+    <a href="https://www.github.com/dimadisaputra" target="_parent">Buka link di parent frame</a><br>
+
+    <!-- _top :  -->
+    <a href="https://www.github.com/dimadisaputra" target="_top">Buka dokumen di full body window</a><br>
+
+
+
+    <!-- Absolute URLs vs. Relative URLs -->
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URls</h2>
+    <p><a href="12-html-colors.html">HTML Colors</a></p>
+    <p><a href="08-html-styles.html">HTML Styles</a></p>
+
+
+
+    <!-- HTML Links - Menggunakan image sebagai Link -->
+    <a href="13-html-styles-css.html" target="_blank">
+        <img src="img/images.png" alt="HTML Styles" style="width: 360px; height: 144px;">
+    </a>
+
+
+
+    <!-- Link ke Email Address -->
+    <a href="mailto:dimadisaputra@gmail.com">Beri aku umpan balik</a>
+
+    <!-- Button sebagai Link -->
+    <button onclick="document.location='12-html-colors.html'">HTML Colors</button>
+
+    
+
+    <!-- Link Titles -->
+    <!-- Ketika mouse ada di atas link maka akan muncul titlenya -->
+    <br>
+    <a href="https://www.w3shools.com/html/" title="Go to W3School HTML section"> Visit our HTML Tutorial</a>
+
+
+
+    <!-- HTML Links - Warna yang berbeda -->
+    <!-- Secara default, link akan terlihat seperti ini pada browser -->
+    <!--    Belum di kunjungi: Garis bawah dan berwarna biru -->
+    <!--    Telah di kujingi : Garis bawah dan berwarna ungu -->
+    <!--    Di klik : Garis bawah dan berwarna merah -->
+    <!-- Kita dapat mengubahnya menggunakan css -->
+
+
+
+    <!-- HTML Links - Membuat Bookmarks -->
+    <!-- HTML Links dapat digunakan sebagai bookmark, jadi user dapat jump ke bagain spesirif dari web -->
+    <h2 id="C4"> Chapter 4</h2>
+
+
+</body>
+</html>

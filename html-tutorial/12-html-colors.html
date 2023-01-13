@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Colors</title>
 </head>
+
 <body>
     <!-- Warna HTML ditentukan dengan nama warna yang telah ditentukan sebelumnya, atau dengan nilai RGB, HEX, HSL, RGBA, atau HSLA. -->
-    
+
     <!-- Color Names -->
     <!-- Pada HTML, warna dapat disepesifikan dengan menggunakan color name -->
     <p>
         HTML mendukung
-         <a href="https://www.w3schools.com/colors/colors_names.asp">140 Sandart Color Names</a>
+        <a href="https://www.w3schools.com/colors/colors_names.asp">140 Sandart Color Names</a>
     </p>
 
     <!-- Background Color -->
@@ -24,7 +26,7 @@
     <h1 style="color: tomato;"> Hello World</h1>
     <p style="color: dodgerblue;"> Lorem ipsum dolor sit amet</p>
     <p style="color: mediumseagreen;">Ut wisi enim ad minim veniam,</p>
-    
+
     <!-- Border Color -->
     <h1 style="border: 2px solid tomato;">Hello World</h1>
     <h1 style="border: 2px solid dodgerblue;">Hello World</h1>
@@ -34,8 +36,58 @@
     <h1 style="background-color:rgb(255, 99, 71);">...</h1>
     <h1 style="background-color:#ff6347;">...</h1>
     <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
-    
+
     <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
-    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1> 
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+
+    <!-- HTML RGB dan RGBA -->
+    <!-- rgb(red, green, blue) -->
+    <!-- Terdiri dari 1 - 255 -->
+    <h1 style="color: rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+
+    <!-- Shades of Gray -->
+    <!-- Biasanya untuk mendapatkan warna abu-abu, menggunakna nilai yang sama -->
+    <h1 style="color: rgb(200,200,200);">rgb(200, 200, 200)</h1>
+    <h1 style="color: rgb(140,140,140);">rgb(140, 140, 140)</h1>
+
+    <!-- RGBA Color values -->
+    <!-- Sama seperti RGB bedanya kita punya A(alpha chanel) -->
+    <!-- A merepresentasikan transparent valuenya 0.0 - 0.1 -->
+    <h1 style="background-color: rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+
+    <!-- HEX Color Values -->
+    <!-- #rrggbb -->
+    <!-- rr(red) gg(green) bb(blue), values : 0-255 -->
+    <h1 style="color: #ff0000">Ini warna merah</h1>
+
+    <!-- Shade of Gray -->
+    <h1 style="color: #dcdcdc">Ini warna Abu-abu</h1>
+    <h1 style="color: #bebebe;">Ini juga.</h1>
+
+
+
+    <!-- HSL dan HSLA Colors -->
+    <!-- HSL terdiri dari Hue, saturation, dan lightness -->
+    <!-- HSLA yang mana a merupakan Alpha chanel (transparent) -->
+    <!-- hsl(hue, saturation, lightness) -->
+    <!-- Hue values 0 - 360, 0 merah, 120 hijau, 240 biru  -->
+    <!-- Saturation terdiri dari persentase 0%-100%,0% berarti abu-abu, 100% putih -->
+    <!-- Lightness juga persentase, 0% hitam, 100% putih-->
+    <h1 style="color: hsl(0, 100%, 50%);">Merah</h1>
+
+    <!-- Shade of Gray -->
+    <!-- Setting hue dan saturation di 0, lalu atur lightnessnya. -->
+    <h1 style="color: hsl(0, 0%, 60%);">Shade of Gray</h1>
+
+    <!-- HSLA Color Values -->
+    <h1 id="HSLA" style="color: hsla(0, 100%, 50%, 0.2);">HSLA Color</h1>
+
+    
+
 </body>
+
 </html>
