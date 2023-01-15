@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Picture Elemen</title>
+</head>
+<body>
+    <!-- HTML <picture> elemen mengizinkan kamu untuk menampilkan foto yang berdeda
+        untuk device yang berbeda atau size layar yg berbeda -->
+    
+    <!-- <picture>
+        <source media="(min-width: 650px)" srcset="img/ruka.png">
+        <source media="(min-width: 465px)" srcset="img/images.png">
+        <img src="chizuru.png" style="width:auto;">
+    </picture> -->
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="img/images.png">
+        <source media="(min-width: 500px)" srcset="img/chizuru.png">
+        <img src="img/ruka.png" alt="default" style="width: auto;">
+    </picture>
+
+    <!-- tag img pada bagian akhir digunakan jika browser tidak mendukung pricture atau ukuran sizenya lebih kecil dari yg ditentukan -->
+</body>
+</html>

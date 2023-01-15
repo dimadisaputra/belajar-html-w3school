@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+<body>
+    <!-- HTML <img> digunakan untuk mengembed image pada webpage-->
+    <!-- Images tidak secara teknik dimasukkan kedalam web
+        gambar ditautkan ke halaman web, di tag <img> untuk merefer ke imagenya -->
+    <!-- Jika tautan gambar tidak sesuai, maka akan timpilkan gambar
+        image broken atau isi dari atribute alt -->
+    <!-- Itulah pentingnya atribute alt, jika browser tidak menemukan gambar
+        teks dari alt akan ditampilkan, jadi pastikan alt mendeskripsikan image -->
+    
+    <img src="typo.jpg" alt="Ini Typo Nulis Code" id="top">
+    <img src="tidak_ada_gambar.png"><br>
+    
+
+    <!-- Image Size - Width and Height -->
+    <!-- Width dan height selalu berukuran px -->
+    <!-- Note: Selalu spesifikasikan width dan height pada image-->
+    <!-- Disarankan untuk menggunaknan atribut style untuk mendefinisikannya -->
+    <img src="img/images.png" alt="Sumi Sakurasawa" style="width: 640px; height: 360px;"><br>
+    <img src="img/ruka.png" alt="Ruka Sarasina" width="640px" height="360"> <br>
+
+    <!-- External Images -->
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"><br>
+    
+    <!-- Aimated Image (.gif)-->
+    <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1" alt="NFT"> <br>
+    
+    <!-- Imgae sebagai Link -->
+    <a href="https://www.w3schools.com">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    </a><br>
+
+    <!-- Image Floating -->
+    <p>
+        <a href="#top">
+            <img src="https://cdn-icons-png.flaticon.com/512/7988/7988932.png" alt="Back to Top" style="float: right; width: 100px; height: 100px;">
+        </a>
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
+    </p>
+    <p>
+        <a href="#top">
+            <img src="https://cdn-icons-png.flaticon.com/512/7988/7988932.png" alt="Back to Top" style="float: left; width: 100px; height: 100px;">
+        </a>
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
+    </p>
+    <p>
+        <a href="#top">
+            <img src="https://cdn-icons-png.flaticon.com/512/7988/7988932.png" alt="Back to Top" style=" width: 100px; height: 100px;">
+        </a>
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
+    </p>
+</body>
+</html>
