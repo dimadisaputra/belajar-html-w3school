@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Javascript</title>
+</head>
+<body>
+    <!-- Javascript digunakan untuk membuat website lebih dinamis dan interaktif -->
+    <!-- HTML <script> tag digunakan untuk client side script  -->
+    
+    <h1>My First Javascript</h1>
+
+    <p id="demo">Ini adalah Text </p>
+    <img src="img/chizuru.png" alt="Chizuru" id="image" width="640px" height="360px">
+    <button onclick="changeText()">Click Me!</button>
+
+    <script>
+        function changeText(){
+            //Mengubah Text
+            document.getElementById("demo").innerHTML = "Hello Javascript";
+
+            //Mengubah Style
+            document.getElementById("demo").style.fontSize = "25px"
+            document.getElementById("demo").style.color = "red"
+            document.getElementById("demo").style.backgroundColor = "yellow";
+
+            //Mengubah Atrribute
+            document.getElementById("image").src = "img/ruka.png"
+
+        }
+    </script>
+
+    <!-- <noscript> tag dibunakan untuk alternate content jika user mendisable javascript atau tidak support javascript -->
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <button type="button" onclick="document.getElementById('date').innerHTML = Date()">
+        Click me to display Date and TIme.
+    </button>
+
+    <p id="date"></p>
+</body>
+</html>

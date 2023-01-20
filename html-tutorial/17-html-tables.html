@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            /* border: 1px solid black; */
+            /* Untuk menghilangkan double baris gunakan : */
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* Memberi warna pada garis */
+            /* border-color: #96D4D4; */
+
+            /* Memberi Padding */
+            padding: 15px;
+
+            /* Memberi Spacing */
+            /* Cell spacing adalah space antara cell */
+            /* Secara default space diset di 2px */
+            /* border-spacing: 30px; */
+        }
+
+        /* Memberi Style Table*/
+        /* Zebra Stripes */
+        /* tr:nth-child(even){
+            background-color: #D6EEEE;
+        } */
+
+        /* Vertical Zebra Stripes */
+        /* td:nth-child(even), th:nth-child(even){
+            background-color: #D6EEEE;
+        } */
+
+        /* Combine Vertical dan Horizontal Zebra Stripes */
+        /* tr:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even), td:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.4);
+        } */
+
+        /* Horizontal Divider */
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Hoveralbe Table */
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+
+
+        h1,
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style Table Borders*/
+        /* table, th, td{
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            background-color: #96D4D4;
+        } */
+
+        /* Round Table Borders */
+        /* th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        } */
+
+        /* Menggunakan Border Style */
+        /* th, td{*/
+        /* Titik - titik */
+        /* border-style: dotted; */
+
+        /* Garis Putus - putus */
+        /* border-style: dashed; */
+
+        /* Garis Tegas */
+        /* border-style: solid; */
+
+        /* Double Line */
+        /* border-style: double; */
+
+        /* Garis Embed */
+        /* border-style: groove; */
+
+        /* Garis Timbul */
+        /* border-style: ridge; */
+
+        /* Garis Kedalam */
+        /* border-style: inset; */
+
+        /* Garis Keluar */
+        /* border-style: outset; */
+
+        /* Tidak ada garis */
+        /* border-style: none; */
+
+        /* Garis disembunyikan */
+        /* border-style: hidden; */
+
+        /* }  */
+    </style>
+</head>
+
+<body>
+    <!-- HTML tables mengizinkan web dev untuk mengatur data pada baris dan kolom -->
+
+    <!-- HTML Table -->
+    <!-- <td> table data, merupakan konten dari tabel cell-->
+    <!-- table cell dapat berupa text, images, list, link tabel lain dll -->
+
+    <!-- <tr> table rows -->
+
+    <!-- <th> table header -->
+
+    <!-- Bagaimana menambahkan garis/ border? -->
+    <!-- Lihat pada bagian tag style -->
+
+    <table>
+        <tr>
+            <th>Perusahaan</th>
+            <th>Kontak</th>
+            <th>Negara</th>
+        </tr>
+        <tr>
+            <td>NtoN co.</td>
+            <td>Dimas Adi Saputra</td>
+            <td>Indonesia</td>
+        </tr>
+        <tr>
+            <td>Serumpun Garment</td>
+            <td>Hajah Iida</td>
+            <td>Malaysia</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- HTML Table Size -->
+    <!-- Gunakan style atribut untuk menentukan width atau height -->
+    <table style="width: 100%;">
+        <tr>
+            <th style="width: 70%">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr style="height: 200px;">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <!-- HTML Table Header -->
+    <h1>HTML Table Header</h1>
+    <h3>Vertical Table Header</h3>
+
+    <table style="width: 400px;">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <h3>Header untuk multi kolom</h3>
+
+    <table style="width: 400px;">
+        <tr>
+            <th colspan="2">Firstname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <h3>Table Caption</h3>
+
+    <table style="width: 400px;">
+        <caption>Tabungan Bulanan</caption>
+        <tr>
+            <th>Bulan</th>
+            <th>Tabungan</th>
+        </tr>
+        <tr>
+            <td>Januari</td>
+            <td>Rp. 100.000</td>
+        </tr>
+        <tr>
+            <td>Februari</td>
+            <td>50.0000</td>
+        </tr>
+    </table>
+
+    <!-- HTML Table Padding & Spacing -->
+    <!-- HTMl dapat menyesuaikan Padding pada dalam cell, dan juga space diantara cell -->
+    <!-- Lihat pada bagian tag style -->
+
+    <!-- HTML Table Colspan & Rowspan -->
+    <!-- Colspan -->
+    <br><br><br>
+    <h1>HTML Table Colspan & Rowspan</h1>
+    <table style="width: 400px;">
+        <tr>
+            <th colspan="2">Firstname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <br>
+    <!-- Rowspan -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-8745</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <h1>HTML Table Styling</h1>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Bambang</td>
+            <td>Soeharjo</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Wilis</td>
+            <td>Sengeulis</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Jajang</td>
+            <td>Kurniawan</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Anita</td>
+            <td>Samudera</td>
+            <td>40</td>
+        </tr>
+    </table>
+
+    <!-- HTML Colgroup -->
+    <!-- Tag <colgroup> digunakan untuk style spesifik kolom pada table-->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE;">
+            <!-- <col span="3" style="background-color: pink;"> -->
+            <!-- <col span="3" style="visibility: collapse;"> -->
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+</body>
+
+</html>

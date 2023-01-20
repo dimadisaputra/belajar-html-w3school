@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML id Attribute</title>
+    <style>
+        #myHeader{
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML id attribute digunakna untuk menentukan id untuk elemen HTML -->
+    <!-- Setiap id tidak boleh ada yang sama pada dokumen thml -->
+    <!-- Nilai dair attribute harus unik -->
+    <!-- diugnakan utnuk menujuk spesifik style deklarasi pada style sheet -->
+    <!-- Juga Javascript dapat mengakses dan memanipulate element dengan id spesifik -->
+
+    <!-- The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.). -->
+    <h1 id="myHeader">My Header</h1>
+
+
+    <!-- Perbedaan class dan id -->
+    <!-- class dapat digunakna oleh banyak elemen, sedangkan id hanya boleh digunakna
+        oleh satu elemen -->
+
+    <!-- HTML Bookmarks dengan ID dan links -->
+    <!-- Bookmark digunakan untuk pembaca dapat loncat ke bagian sepesifik pada webpage -->
+    <!-- Bookmark berguna jika halaman sangat panjang  -->
+    <h2 id="C4">Chapter 4</h2>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <a href="#C4">Jump to Chapter 4</a>
+
+    <!-- Untuk locat dari halaman lain -->
+    <a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+    <!-- Menggunakan id Atrribute pada Javascript -->
+    <!-- Mengubah tampilan Header -->
+    <button onclick="displayResult()">Change text</button>
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+
+
+</body>
+</html>
