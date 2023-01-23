@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl Resposive</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .left{
+            background-color: aqua;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        .main{
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+
+        .right{
+            background-color: greenyellow;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        /* Menggunakan meadia query untuk menambahkan break poin di 800px */
+        @media screen and (max-width: 800px){
+            .left, .main, .right{
+                width: 100%;
+                /* Width 100% ketika viewport 800 atau lebih kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive web desain adalah tentang menggunakan HTML dan CSS
+        untuk mengubah ukuran, menyembunyikan, mengecilkan, atau memperbesar situs web
+        secara otomatis agar terlihat bagus disemua device -->
+
+    <!-- Setting Viewport -->
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+
+
+    <!-- Responsive Images -->
+    <!-- Responsive image adalah ukuran image fit dengan browser size / device -->
+    <!-- Menggunakan width property set ke 100%-->
+    <!-- kelemahannya gambar akan diperbesar dan menjadi besar daripada ukuran aslinya, dan gambar akan crash atau buram -->
+    <!-- solusi terbaik menggunakan max-width property -->
+    <!-- max-width akan memperkecil image jika perlu, dan tidak akan memperbeser lebih dari ukuran aslinya -->
+
+    <!-- Menampilkan Gambar yang berbeda di device/ukuran yang berbeda dengan <picture> -->
+    
+    
+    <!-- Responsive Text Size -->
+    <!-- Text size dapat diatur dengan satuan vw viewport width -->
+    <!-- Viewport adalah ukuran jendela browser. 1vw = 1% dari lebar viewport. Jika lebar viewport 50cm, 1vw adalah 0,5cm. -->
+
+
+
+    <!-- Media Queries -->
+    <!-- Menentukan style yang berbeda sesuai dengan ukuran browser -->
+
+    <img src="img/chizuru.png" alt="" style="max-width: 100%;">
+    <picture>
+        <source srcset="img/images.png" media="(max-width: 600px)">
+        <source srcset="img/ruka.png" media="(max-width: 1200px)">
+        <img src="img/chizuru.png" alt="">
+    </picture>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus vel, vero, provident minus eum tempore ducimus omnis quasi doloribus reprehenderit ab sapiente saepe cum architecto voluptates magni quam perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut placeat fugit voluptates deleniti recusandae consectetur deserunt error aliquam nemo, hic quas aut nihil rem alias a aspernatur temporibus excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, qui! Eum deserunt sed dolore labore distinctio laborum voluptatem placeat, voluptas tempore odio facilis nam qui nulla consectetur illum? Nisi, nam!</p>
+    <h1 style="font-size: 10vw;">Hello World</h1>
+
+    <!-- Media Queries -->
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+
+    <div class="main">
+        <p>Main Content</p>
+    </div>
+
+    <div class="right">
+        <p>Right Menu</p>
+    </div>
+</body>
+</html>
