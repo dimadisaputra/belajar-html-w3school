@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Element</title>
+</head>
+<body>
+    <!-- <input>  -->
+
+    <!-- <label> -->
+
+    <!-- 
+        <select>
+        x. secara default elemen pertama yang akan di select, kita bisa 
+        mengubahnya dengan atribut selected 
+        x. gunakan siza atribut untuk spesifikasi angka yangakan tampil
+        x. gunakan multiple atribut untuk mengizinkan user memilih lebih
+        dari satu. dengan hold ctrl dan pilih.
+        x.
+    -->
+    
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="3" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+    </select> <br><br>
+
+    <!-- 
+        <textarea>
+        x. merupakan bidang multi line untuk input
+        x. atribut rows menentukan jumlah baris yang terlihat di area text
+        x. atribut cols menentukan lebar area text yang terlihat
+        x. kita juga dapat mengatur size dengan css
+    -->
+
+    <textarea name="messege" id="messege" cols="30" rows="10">
+        The cat was playing in the garden.
+    </textarea>
+
+    <textarea name="messege2" id="messege2" style="width: 200px; height: 300px;">
+        The cat was playing in the garden.
+    </textarea><br><br>
+
+    <!-- <button> -->
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+    
+    <!-- 
+        <fieldset> dan <legend>
+        x. fieldset digunakan untuk mengrup relate data di satu form
+        x. legend merupakan caption dari fieldset
+     -->
+
+     <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Dimas"> <br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="Adi Saputra"> <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+     </form> <br> <br>
+
+     <!-- 
+        <datalist>
+        x. menentukan daftar opsi yang telah ditentukan sebelumnya
+        x. Pengguna akan melihat daftar drop-down dari opsi yang 
+        ditentukan sebelumnya saat mereka memasukkan data.
+      -->
+
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+    </form> <br> <br>
+
+    <!-- 
+        <output>
+        x. mewakili hasi perhitungan (seperti yang dilakukan script)
+        x. sudah tidak disupport dibeberapa browser
+     -->
+
+     <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+     </form>
+
+</body>
+</html>

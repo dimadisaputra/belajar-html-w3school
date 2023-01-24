@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attribute</title>
+</head>
+<body>
+    <!-- action attribute menentukan tindakan yang akan dilakukan
+        saat form dikirim  -->
+    <!-- target attribute menentukan tempat menampilkan respons yang diterima
+        setelah mengirimkan formulir 
+            _blank  : response ditampilkan di new window or tab
+            _self   : response akan ditampilkan di window saat ini
+            _parent : response akan ditampilkan di parent frame
+            _top    : response akan ditampilkan di full body window
+            _framename  : respone akan ditampilkan di nama iframe-->
+
+    <form action="action_page.php" target="_blank"></form>
+
+    <!-- method atrribute menentukan metode http ang akan digunakan
+        saat mengirim data. terdapat dua method yaitu get dan post-->
+    
+    <form action="action_page.php" method="get"></form>
+
+    <!-- autocomplete attribute, jika on maka browser akan otomatis
+        complete the values sesuai yang user inputkan sebelumnya-->
+    
+    <form action="action_page.php" autocomplete="on"></form>
+
+    <!-- novalidate attribute, adalah boolan attribute -->
+    <form action="action_page.php" novalidate></form>
+
+
+</body>
+</html>
