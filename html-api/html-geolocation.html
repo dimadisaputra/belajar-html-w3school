@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Geolocation API</title>
+
+</head>
+<body>
+    <!-- API untuk mendapatkan lokasi user -->
+    <p>Klik tombol dibawah untuk mendapatkan koordinatmu</p>
+
+    <button onclick="getLocation()">Coba!</button>
+    <p id="demo"></p>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        // mengecek apakah browser support geolocation
+        // ada juga watchlocation untuk melihat posisi user berpindah.
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            }else{
+                x.innerHTML = "Geolocation tidak didukung dibrowser ini"
+            }
+        }
+
+        // menampilkan posisi latitude dan longitude
+        function showPosition(position){
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+        }
+
+        // error handling
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User menolak permintaan izin untuk Geolocation"
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Informasi Lokasi tidak tersedia"
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "Waktu permitaan untuk mendapatkan lokasi user habis"
+                    break;
+                case error.UNKNOWN_ERROR:
+                    x.innerHTML = "Error tidak diketahui"
+                    break;
+            }
+        }
+    </script>
+    
+</body>
+</html>
